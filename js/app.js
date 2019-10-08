@@ -5,7 +5,7 @@ var shopHours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm',
 
 var ulSeattle = document.getElementById('seattle');
 
-var cookieshopSeattle  = {
+var cookieshopSeattle = {
   minimumCustomers: 23,
   maximumCustomers: 65,
   averageCookiesPerCustomer: 6.3,
@@ -143,6 +143,7 @@ var cookieshopDubai = {
 cookieshopDubai.generateCustomersPerHour();
 cookieshopDubai.generateCookiesPerHour();
 cookieshopDubai.render();
+
 
 var ulParis = document.getElementById('paris');
 
