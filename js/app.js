@@ -1,9 +1,7 @@
 /* eslint-disable no-unused-vars */
+
 var parentEl = document.getElementById('parentElement');
 
-var child = document.createElement('h1');
-child.textContent = 'Cookie Store';
-parentEl.appendChild(child);
 
 var shopHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 function randomNumber(min, max) {
@@ -20,6 +18,7 @@ function CookieStores(location, minimumCustomers, maximumCustomers, avgCustCooki
   this.cookiesEachHour = [];
   this.totalCookies = 0;
   allCookieStores.push(this);
+ 
 }
 
 var seattle= new CookieStores('Seattle', 23, 65, 6.3);
@@ -31,9 +30,10 @@ var lima = new CookieStores('Lima', 2, 16, 4.6);
 
 CookieStores.prototype.genHourlyCustVolume = function() {
   for( var i = 0; i < shopHours.length; i++ ) {
-    var customers = randomNumber(this.minimumCustomers, this.maximumCustomers);
+    var customers = Math.floor(Math.random() * Math.floor(this.maximumCustomers - this.minimumCustomers + 1) + this.minimumCustomers);
     this.customersEachHour.push(customers);
   }
+  console.log(this);
 };
 
 CookieStores.prototype.genHourlyCookieVolume = function() {
@@ -49,5 +49,6 @@ CookieStores.prototype.genHourlyCookieVolume = function() {
 for (var i=0; i < allCookieStores.length; i++) {
   allCookieStores[i].genHourlyCustVolume();
   allCookieStores[i].genHourlyCookieVolume();
-  allCookieStores[i].render();
+  console.log(this);
+  // allCookieStores[i].render();
 }
