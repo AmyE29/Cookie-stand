@@ -1,0 +1,10 @@
+img { 
+    width: 50%;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+body{
+    background-color: coral;
+    border: solid turquoise;
+}
