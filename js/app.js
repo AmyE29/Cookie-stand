@@ -108,5 +108,18 @@ for (var i=0; i < CookieStores.allLocations.length; i++) {
   CookieStores.allLocations[i].genHourlyCookieVolume();
   CookieStores.allLocations[i].render();
 }
+var userForm = document.getElementById('NewStore');
+userForm.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  var location = event.target.location.value;
+  var minimumCustomers= event.target.minimumCustomers.value;
+  var maximumCustomers = event.target.maximumCustomers.value;
+  var avgCustCookies = event.target.avgCustCookies.value;
+
+  new CookieStores(location, minimumCustomers, maximumCustomers, avgCustCookies);
+  renderFooterRow();
+}
 footer();
 
