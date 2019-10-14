@@ -3,30 +3,36 @@
 <head>
     <link rel="resest" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
   <title>Cookie Store</title>
-  <head>
-    <img src="assets/salmon.png" alt="big fish">
-    <title>My Cookie Stores</title>
-  </head>
   <body>
-    <h1 id = "parentElement"></h1>
-    <table id="tableData"></table>
-    <script src="js/app.js"></script>
+      <header>
+          <h1 id = "parentElement"></h1>
+          <img src="assets/salmon.png" alt= "big ugly fish">
+        </header>
   </body>
-    <table id="tableElement"></table>
-    <form id="newStore">
-        <p>Add A New Cookie Stand</p>
+    <section>
+        <h1>Salmon Cookie Stands</h1>
+        <p>
+          We sell a lot of tasty cookies!
+        </p>
+      </section>
+      <section>
+        <table id="tableData"></table>
+        <form id="user-form">
         <fieldset>
             <label>New Location</label>
-            <input id = "NewLocation" type="text" placeholder = "Enter your location...">
+            <input id = "InputElementLocation" type="text" placeholder = "Enter your location...">
             <label>Minimum Customers</label>
-            <input id = "minimumCustomers" type="text" placeholder = "Enter number...">    
+            <input id = "InputELementMinimumCustomers" type="text" placeholder = "Enter number...">    
             <label>Maximum Cumstomers</label>
-            <input id = "maximumCustomers" type="text" placeholder = "Enter number...">
+            <input id = "InputElementMaximumCustomers" type="text" placeholder = "Enter number...">
             <label>Average Cookie Sales</label>
-            <input id = "avgCustCookies" type="text" placeholder = "Enter your location...">         
+            <input id = "InputElementAvgCustCookies" type="text" placeholder = "Enter your location...">         
             <button value="submit">Submit</button>
         </fieldset>
       </form>
+    </section>
+      <script src="js/app.js"></script>
 </body>
 </html>
