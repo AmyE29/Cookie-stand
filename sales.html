@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="resest" href="css/reset.css">
+    <h1 id = "parentElement"></h1>
+    <link rel="reset" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
   <title>Cookie Store</title>
   <body>
       <header>
-          <h1 id = "parentElement"></h1>
           <img src="assets/salmon.png" alt= "big ugly fish">
+          <nav id = home>
+              <a href = "index.html">Home</a>
+          </nav>
         </header>
   </body>
     <section>
@@ -21,14 +24,14 @@
         <table id="tableData"></table>
         <form id="user-form">
         <fieldset>
-            <label>New Location</label>
-            <input id = "InputElementLocation" type="text" placeholder = "Enter your location...">
-            <label>Minimum Customers</label>
-            <input id = "InputELementMinimumCustomers" type="text" placeholder = "Enter number...">    
-            <label>Maximum Cumstomers</label>
-            <input id = "InputElementMaximumCustomers" type="text" placeholder = "Enter number...">
-            <label>Average Cookie Sales</label>
-            <input id = "InputElementAvgCustCookies" type="text" placeholder = "Enter your location...">         
+            <label>New Location:</label></br>
+            <input id = "InputElementLocation" type="text" placeholder = "Enter your location..."> </br></br>
+            <label>Minimum Customers:</label></br>
+            <input id = "InputELementMinimumCustomers" type="text" placeholder = "Enter number..."> </br></br>
+            <label>Maximum Customers:</label></br>
+            <input id = "InputElementMaximumCustomers" type="text" placeholder = "Enter number..."></br></br>
+            <label>Average Cookie Sales:</label></br>
+            <input id = "InputElementAvgCustCookies" type="text" placeholder = "Enter your location...">   </br> </br>     
             <button value="submit">Submit</button>
         </fieldset>
       </form>
